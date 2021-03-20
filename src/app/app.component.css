@@ -1,0 +1,119 @@
+h1 {
+  margin: 0;
+  text-align: center;
+  padding: 60px;
+  font-weight: 400;
+  font-size: 3rem;
+}
+h3 {
+  padding: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.example-card {
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 1px gray;
+}
+
+.prices-container {
+  display: flex;
+  max-width: 1140px;
+  flex-grow: 1;
+}
+.mat-card-header {
+  display: block !important;
+}
+::ng-deep .mat-card-header-text {
+  margin: 0px !important;
+}
+h3,
+.mat-card-subtitle {
+  color: #000;
+}
+.mat-raised-button {
+  color: #fff;
+}
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: none !important ;
+}
+.mat-card-content h3 {
+  font-size: 1rem;
+}
+.mat-card-title {
+  border-radius: 8px 8px 0px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5rem !important;
+  background-color: gray;
+}
+.mat-card-subtitle {
+  font-size: 44px !important;
+  padding-top: 40px !important;
+}
+.mat-list-base {
+  padding-top: 20px !important;
+}
+.mat-card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(211, 211, 211, 0.432);
+  padding: 0px;
+}
+.mat-card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5) !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+  background-color: #0000ff;
+  font-weight: 600;
+}
+h3 {
+  font-size: 22px;
+  margin: 0;
+}
+.column {
+  width: 80%;
+  margin: 20px auto;
+}
+@media (min-width: 820px) {
+  .main {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .column {
+    width: 30%;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    padding: 30px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .prices-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .column {
+    width: 60%;
+    margin: 20px;
+  }
+}
