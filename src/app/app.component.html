@@ -7,59 +7,61 @@
     >
   </h3>
   <div class="main">
-    <div class="column">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Payment w/ Amount</mat-card-title>
-          <mat-card-subtitle><small>$</small>10</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <h3>Set amount in Admin Panel</h3>
-        </mat-card-content>
-        <mat-card-actions>
-          <button id="pm-payment-amount" mat-raised-button class="mb-20">
-            Open Modal
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div class="column">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Payment w/ PriceId</mat-card-title>
-          <mat-card-subtitle><small>$</small>39</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <h3>Set price id in Admin Panel</h3>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button class="mb-20 pm-payment-stripeid">
-            Open Modal
-          </button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div class="column">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Subscription</mat-card-title>
-          <mat-card-subtitle
-            ><small>$</small>49<small>/mo</small></mat-card-subtitle
-          >
-        </mat-card-header>
-        <mat-card-content>
-          <h3>Set price id in Admin Panel</h3>
-        </mat-card-content>
-        <mat-card-actions>
-          <button
-            mat-raised-button
-            class="mb-20"
-            data-subscription-checkout="true"
-          >
-            Open Modal
-          </button>
-        </mat-card-actions>
-      </mat-card>
+    <div class="prices-container">
+      <div class="column">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>Payment w/ Amount</mat-card-title>
+            <mat-card-subtitle><small>$</small>10</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <h3>Set amount in Admin Panel</h3>
+          </mat-card-content>
+          <mat-card-actions>
+            <button id="pm-payment-amount" mat-raised-button class="mb-20">
+              Open Modal
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="column">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>Payment w/ PriceId</mat-card-title>
+            <mat-card-subtitle><small>$</small>39</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <h3>Set price id in Admin Panel</h3>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button class="mb-20 pm-payment-stripeid">
+              Open Modal
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="column">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <mat-card-title>Subscription</mat-card-title>
+            <mat-card-subtitle
+              ><small>$</small>49<small>/mo</small></mat-card-subtitle
+            >
+          </mat-card-header>
+          <mat-card-content>
+            <h3>Set price id in Admin Panel</h3>
+          </mat-card-content>
+          <mat-card-actions>
+            <button
+              mat-raised-button
+              class="mb-20"
+              data-subscription-checkout="true"
+            >
+              Open Modal
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
   </div>
 </div>
