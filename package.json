@@ -1,6 +1,18 @@
 {
-  "name": "ang-ex",
-  "version": "0.0.0",
+  "name": "stripe-payment-modal-angular-example",
+  "version": "1.0.0",
+  "author": "FunnelKake LLC",
+  "description": "Angular Stripe Payment Modal demo app",
+  "keywords": [
+    "angular",
+    "stripe",
+    "modals",
+    "stripe-checkout",
+    "stripe-popup-angular",
+    "stripe-checkout-angular",
+    "stripe-checkout-modal"
+  ],
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "config": "ts-node ./scripts/setenv.ts",
