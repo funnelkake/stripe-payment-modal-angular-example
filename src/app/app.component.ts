@@ -1,6 +1,6 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { get } from 'scriptjs';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 
 // use this line instead for local
 // import { environment } from 'src/environments/environment';
