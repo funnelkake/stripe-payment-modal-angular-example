@@ -2,9 +2,9 @@
   <h1>Demo Angular Application</h1>
   <h3>
     View complete documentation at
-    <a href="https://paymentmodal.com/docs" target="_blank" rel="noopener"
-      >PaymentModal.com/docs</a
-    >
+    <a href="https://paymentmodal.com/docs" target="_blank" rel="noopener">
+      PaymentModal.com/docs
+    </a>
   </h3>
   <div class="main">
     <div class="prices-container">
@@ -16,6 +16,14 @@
           </mat-card-header>
           <mat-card-content>
             <h3>Set amount in Admin Panel</h3>
+            <mat-form-field appearance="fill">
+              <mat-label>Quantity</mat-label>
+              <mat-select [(value)]="paymentAmountQuantity" (selectionChange)="onQuantityChanged($event, '#pm-payment-amount')">
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+              </mat-select>
+            </mat-form-field>
           </mat-card-content>
           <mat-card-actions>
             <button id="pm-payment-amount" mat-raised-button class="mb-20">
@@ -32,6 +40,14 @@
           </mat-card-header>
           <mat-card-content>
             <h3>Set price id in Admin Panel</h3>
+            <mat-form-field appearance="fill">
+              <mat-label>Quantity</mat-label>
+              <mat-select [(value)]="paymentPriceIdQuantity" (selectionChange)="onQuantityChanged($event, '.pm-payment-stripeid')">
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+              </mat-select>
+            </mat-form-field>
           </mat-card-content>
           <mat-card-actions>
             <button mat-raised-button class="mb-20 pm-payment-stripeid">
@@ -44,12 +60,20 @@
         <mat-card class="example-card">
           <mat-card-header>
             <mat-card-title>Subscription</mat-card-title>
-            <mat-card-subtitle
-              ><small>$</small>49<small>/mo</small></mat-card-subtitle
-            >
+            <mat-card-subtitle>
+              <small>$</small>49<small>/mo</small>
+            </mat-card-subtitle>
           </mat-card-header>
           <mat-card-content>
             <h3>Set price id in Admin Panel</h3>
+            <mat-form-field appearance="fill">
+              <mat-label>Quantity</mat-label>
+              <mat-select [(value)]="subscriptionPaymentQuantity" (selectionChange)="onQuantityChanged($event, '[data-subscription-checkout=true]')">
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+              </mat-select>
+            </mat-form-field>
           </mat-card-content>
           <mat-card-actions>
             <button
